@@ -37,6 +37,8 @@ group :development, :test do
   gem 'net-http'
   gem 'net-smtp'
   gem 'net-imap'
+
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
