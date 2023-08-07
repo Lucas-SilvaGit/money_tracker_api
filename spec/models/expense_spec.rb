@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'has one Trasaction' do
+    expect(Expense.reflect_on_association(:transaction_item).macro).to eq(:has_one)
+  end
 end
