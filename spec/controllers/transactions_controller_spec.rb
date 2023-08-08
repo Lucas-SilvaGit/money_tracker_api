@@ -7,4 +7,12 @@ RSpec.describe Api::V1::TransactionsController, type: :controller do
       expect(response).to be_successful
     end
   end
+
+  describe 'GET #show' do
+    it 'returns a success response' do
+      transaction = FactoryBot.create(:transaction)
+      get :show, params: { id: transaction.id }
+      expect(response).to be_successful
+    end
+  end
 end
