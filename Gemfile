@@ -33,6 +33,12 @@ group :development, :test do
   gem "capybara"
 
   gem 'devise'
+
+  gem 'net-http'
+  gem 'net-smtp'
+  gem 'net-imap'
+
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
